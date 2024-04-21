@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     #Self hosted runner
-    runs-on: ubuntu-latest
+    runs-on: self-hosted-runner1,self-hosted-runner2
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: ls -l
+        run: cp index.html /var/www/html
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
