@@ -27,9 +27,10 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Elevate permissions
-        run: | 
-          sudo su
-          whoami
+        run: sudo su
+      
+      - name: Display current user
+        run: whoami
 
       - name: Copy index file to apache directory
         run: cp index.html /var/www/html
