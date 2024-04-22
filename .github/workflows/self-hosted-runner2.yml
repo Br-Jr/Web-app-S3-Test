@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CD-Web-app
+name: CI/CD-Web-app-Self-hosted-runner2
 
 # Controls when the workflow will run
 on:
@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     #Self hosted runner
-    runs-on: ["self-hosted-runner1", "self-hosted-runner2"]
+    runs-on: self-hosted-runner2
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
